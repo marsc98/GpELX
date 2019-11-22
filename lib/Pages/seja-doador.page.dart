@@ -31,7 +31,7 @@ class _SejaDoadorPageState extends State<SejaDoadorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green[300],
+        backgroundColor: Color(0xFF1F9A58).withOpacity(0.8),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           color: Colors.black,
@@ -147,7 +147,7 @@ class _SejaDoadorPageState extends State<SejaDoadorPage> {
               ),
             ),
             SizedBox(
-              height: 15,
+              height: 35,
             ),
             TextFormField(
               autofocus: true,
@@ -155,9 +155,9 @@ class _SejaDoadorPageState extends State<SejaDoadorPage> {
               decoration: InputDecoration(
                 labelText: "Decreva o que irá doar:",
                 labelStyle: TextStyle(
-                  color: Colors.black38,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 15,
+                  color: Colors.black87,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 20,
                 ),
               ),
               style: TextStyle(fontSize: 20),

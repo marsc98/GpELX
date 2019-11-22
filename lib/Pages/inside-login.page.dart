@@ -14,7 +14,7 @@ class InsideLoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green[300],
+        backgroundColor: Color(0xFF1F9A58).withOpacity(0.8),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           color: Colors.black,
@@ -23,19 +23,19 @@ class InsideLoginPage extends StatelessWidget {
       ),
       body: Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
-            stops: [0.1, 0.9],
+          /*gradient: LinearGradient(
+            begin: Alignment.bottomCenter,
+            end: Alignment.topCenter,
+            stops: [0.06, 0.9],
             colors: [
-              Colors.green[300],
+              Color(0xFF469F64),
               Color(0xFFC6E7CA),
             ],
-          ),
-          /*image: DecorationImage(
+          ),*/
+          image: DecorationImage(
             image: AssetImage("lib/imagens/7.png"),
             fit: BoxFit.cover,
-          ),*/
+          ),
           //color: Colors.white.withOpacity(0.8),
         ),
         child: ListView(
@@ -54,13 +54,22 @@ class InsideLoginPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      spreadRadius: 1.0,
-                      blurRadius: 1.0,
+                      spreadRadius: 4.0,
+                      blurRadius: 4.0,
                       color: Colors.black12,
-                      offset: Offset(2.0, 2.0),
+                      offset: Offset(3.0, 3.0),
                     ),
                   ],
-                  color: Colors.white70,
+                  /*gradient: LinearGradient(
+                    begin: Alignment.centerLeft,
+                    end: Alignment.bottomRight,
+                    stops: [0.15, 0.9],
+                    colors: [
+                      Colors.green[600],
+                      Color(0xFFC6E7CA),
+                    ],
+                  ),*/
+                  color: Colors.green.withOpacity(0.6),
                   borderRadius: BorderRadius.all(
                     Radius.circular(12),
                   ),
@@ -112,13 +121,22 @@ class InsideLoginPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      spreadRadius: 1.0,
-                      blurRadius: 1.0,
+                      spreadRadius: 4.0,
+                      blurRadius: 4.0,
                       color: Colors.black12,
-                      offset: Offset(2.0, 2.0),
+                      offset: Offset(3.0, 3.0),
                     ),
                   ],
-                  color: Colors.green[300].withOpacity(0.8),
+                  // gradient: LinearGradient(
+                  //   begin: Alignment.centerLeft,
+                  //   end: Alignment.bottomRight,
+                  //   stops: [0.15, 0.9],
+                  //   colors: [
+                  //     Colors.green[600],
+                  //     Color(0xFFC6E7CA),
+                  //   ],
+                  // ),
+                  color: Colors.green.withOpacity(0.6),
                   borderRadius: BorderRadius.all(
                     Radius.circular(12),
                   ),
@@ -170,13 +188,22 @@ class InsideLoginPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      spreadRadius: 1.0,
-                      blurRadius: 1.0,
+                      spreadRadius: 4.0,
+                      blurRadius: 4.0,
                       color: Colors.black12,
-                      offset: Offset(2.0, 2.0),
+                      offset: Offset(3.0, 3.0),
                     ),
                   ],
-                  color: Colors.white70,
+                  // gradient: LinearGradient(
+                  //   begin: Alignment.centerLeft,
+                  //   end: Alignment.bottomRight,
+                  //   stops: [0.15, 0.9],
+                  //   colors: [
+                  //     Colors.green[600],
+                  //     Color(0xFFC6E7CA),
+                  //   ],
+                  // ),
+                  color: Colors.green.withOpacity(0.6),
                   borderRadius: BorderRadius.all(
                     Radius.circular(12),
                   ),
@@ -227,13 +254,22 @@ class InsideLoginPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      spreadRadius: 1.0,
-                      blurRadius: 1.0,
+                      spreadRadius: 4.0,
+                      blurRadius: 4.0,
                       color: Colors.black12,
-                      offset: Offset(2.0, 2.0),
+                      offset: Offset(3.0, 3.0),
                     ),
                   ],
-                  color: Colors.green[300].withOpacity(0.8),
+                  // gradient: LinearGradient(
+                  //   begin: Alignment.centerLeft,
+                  //   end: Alignment.bottomRight,
+                  //   stops: [0.15, 0.9],
+                  //   colors: [
+                  //     Colors.green[600],
+                  //     Color(0xFFC6E7CA),
+                  //   ],
+                  // ),
+                  color: Colors.green.withOpacity(0.6),
                   borderRadius: BorderRadius.all(
                     Radius.circular(12),
                   ),

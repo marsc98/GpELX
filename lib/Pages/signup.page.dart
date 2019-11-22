@@ -7,7 +7,7 @@ class SignupPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green[300],
+        backgroundColor: Color(0xFF1F9A58).withOpacity(0.8),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           color: Colors.black,
@@ -124,7 +124,7 @@ class SignupPage extends StatelessWidget {
               height: 55,
               alignment: Alignment.centerLeft,
               decoration: BoxDecoration(
-                color: Color(0xFF83D95B).withOpacity(0.8),
+                color: Color(0xFF1F9A58).withOpacity(0.5),
                 borderRadius: BorderRadius.all(
                   Radius.circular(9),
                 ),
@@ -151,7 +151,7 @@ class SignupPage extends StatelessWidget {
               height: 55,
               alignment: Alignment.centerLeft,
               decoration: BoxDecoration(
-                color: Colors.red.withOpacity(0.7),
+                color: Colors.red[400].withOpacity(0.7),
                 borderRadius: BorderRadius.all(
                   Radius.circular(9),
                 ),

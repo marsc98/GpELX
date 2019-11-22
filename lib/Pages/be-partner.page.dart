@@ -17,6 +17,8 @@ class MyApp extends StatefulWidget {
 //Padrão:
 
 class BePartnerPage extends StatefulWidget {
+  final escolha2 = GlobalKey<FormState>();
+
   @override
   _BePartnerPageState createState() => _BePartnerPageState();
 }
@@ -29,7 +31,7 @@ class _BePartnerPageState extends State<BePartnerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green[300],
+        backgroundColor: Color(0xFF1F9A58).withOpacity(0.8),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           color: Colors.black,
@@ -55,13 +57,13 @@ class _BePartnerPageState extends State<BePartnerPage> {
         child: ListView(
           padding: EdgeInsets.only(
             top: 60,
-            left: 60,
-            right: 60,
+            left: 30,
+            right: 30,
           ),
           children: <Widget>[
             SizedBox(
               child: Container(
-                alignment: Alignment.centerRight,
+                alignment: Alignment.center,
                 height: 70,
                 decoration: BoxDecoration(
                   color: Colors.blue.withOpacity(0.6),
