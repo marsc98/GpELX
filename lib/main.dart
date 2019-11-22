@@ -19,11 +19,15 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
+    SizedBox(
+      height: 150,
+    );
     return new SplashScreen(
         seconds: 3,
         navigateAfterSeconds: new MyApp(),
         image: new Image(
           image: AssetImage("lib/imagens/m1.png"),
+          height: 105,
         ),
         backgroundColor: Colors.white,
         styleTextUnderTheLoader: new TextStyle(),

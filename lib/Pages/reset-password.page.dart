@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ResetPasswordPage extends StatelessWidget {
+  String _esquecisenha;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,6 +66,7 @@ class ResetPasswordPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
               ),
+              onSaved: (input) => _esquecisenha = input,
             ),
             SizedBox(
               height: 40,

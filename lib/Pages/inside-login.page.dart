@@ -23,32 +23,33 @@ class InsideLoginPage extends StatelessWidget {
       ),
       body: Container(
         decoration: BoxDecoration(
-          /*gradient: LinearGradient(
+          gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
             stops: [0.1, 0.9],
             colors: [
-              Color(0xFF469F64),
+              Colors.green[300],
               Color(0xFFC6E7CA),
             ],
-          ),*/
-          image: DecorationImage(
+          ),
+          /*image: DecorationImage(
             image: AssetImage("lib/imagens/7.png"),
             fit: BoxFit.cover,
-          ),
+          ),*/
+          //color: Colors.white.withOpacity(0.8),
         ),
         child: ListView(
           padding: EdgeInsets.only(
-            top: 60,
-            left: 40,
-            right: 40,
+            top: 50,
+            left: 25,
+            right: 25,
           ),
           children: <Widget>[
             //Seja Doador:
 
             SizedBox(
               child: Container(
-                height: 65,
+                height: 74,
                 alignment: Alignment.centerLeft,
                 decoration: BoxDecoration(
                   boxShadow: [
@@ -59,7 +60,7 @@ class InsideLoginPage extends StatelessWidget {
                       offset: Offset(2.0, 2.0),
                     ),
                   ],
-                  color: Color(0xFF469F64).withOpacity(0.8),
+                  color: Colors.white70,
                   borderRadius: BorderRadius.all(
                     Radius.circular(12),
                   ),
@@ -106,7 +107,7 @@ class InsideLoginPage extends StatelessWidget {
 
             SizedBox(
               child: Container(
-                height: 65,
+                height: 74,
                 alignment: Alignment.centerLeft,
                 decoration: BoxDecoration(
                   boxShadow: [
@@ -117,7 +118,7 @@ class InsideLoginPage extends StatelessWidget {
                       offset: Offset(2.0, 2.0),
                     ),
                   ],
-                  color: Colors.white70,
+                  color: Colors.green[300].withOpacity(0.8),
                   borderRadius: BorderRadius.all(
                     Radius.circular(12),
                   ),
@@ -164,7 +165,7 @@ class InsideLoginPage extends StatelessWidget {
             //ONGS:
             SizedBox(
               child: Container(
-                height: 65,
+                height: 74,
                 alignment: Alignment.centerLeft,
                 decoration: BoxDecoration(
                   boxShadow: [
@@ -175,7 +176,7 @@ class InsideLoginPage extends StatelessWidget {
                       offset: Offset(2.0, 2.0),
                     ),
                   ],
-                  color: Color(0xFF469F64).withOpacity(0.8),
+                  color: Colors.white70,
                   borderRadius: BorderRadius.all(
                     Radius.circular(12),
                   ),
@@ -221,7 +222,7 @@ class InsideLoginPage extends StatelessWidget {
             ),
             SizedBox(
               child: Container(
-                height: 65,
+                height: 74,
                 alignment: Alignment.centerLeft,
                 decoration: BoxDecoration(
                   boxShadow: [
@@ -232,7 +233,7 @@ class InsideLoginPage extends StatelessWidget {
                       offset: Offset(2.0, 2.0),
                     ),
                   ],
-                  color: Colors.white70,
+                  color: Colors.green[300].withOpacity(0.8),
                   borderRadius: BorderRadius.all(
                     Radius.circular(12),
                   ),

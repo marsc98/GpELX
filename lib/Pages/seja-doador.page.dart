@@ -152,9 +152,8 @@ class _SejaDoadorPageState extends State<SejaDoadorPage> {
             TextFormField(
               autofocus: true,
               keyboardType: TextInputType.text,
-              obscureText: true,
               decoration: InputDecoration(
-                labelText: "Descreva sua doação:",
+                labelText: "Decreva o que irá doar:",
                 labelStyle: TextStyle(
                   color: Colors.black38,
                   fontWeight: FontWeight.w400,

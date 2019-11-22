@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SignupPage extends StatelessWidget {
+  String _nome, _emailcad, _senhacad;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,6 +78,7 @@ class SignupPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
               ),
+              onSaved: (input) => _nome = input,
             ),
             SizedBox(
               height: 15,
@@ -93,6 +96,7 @@ class SignupPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
               ),
+              onSaved: (input) => _emailcad = input,
             ),
             SizedBox(
               height: 15,
@@ -111,6 +115,7 @@ class SignupPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
               ),
+              onSaved: (input) => _senhacad = input,
             ),
             SizedBox(
               height: 38,
@@ -154,7 +159,7 @@ class SignupPage extends StatelessWidget {
               child: SizedBox.expand(
                 child: FlatButton(
                   child: Text(
-                    "Cancelar",
+                    "Cancelar", //Exemplo de validação do botão tá na pagina de login.
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.w600,
