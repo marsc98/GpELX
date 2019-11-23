@@ -27,7 +27,8 @@ class _SplashState extends State<Splash> {
         navigateAfterSeconds: new MyApp(),
         image: new Image(
           image: AssetImage("lib/imagens/m1.png"),
-          height: 105,
+          height: 200,
+          width: 200,
         ),
         backgroundColor: Colors.white,
         styleTextUnderTheLoader: new TextStyle(),

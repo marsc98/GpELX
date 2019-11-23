@@ -1,9 +1,11 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:transforma/Pages/aboutus.page.dart';
 import 'package:transforma/Pages/be-partner.page.dart';
-import 'package:transforma/Pages/family.page.dart';
+
 import 'package:transforma/Pages/ongs.page.dart';
 import 'package:transforma/Pages/seja-doador.page.dart';
 
@@ -281,15 +283,15 @@ class InsideLoginPage extends StatelessWidget {
                       children: <Widget>[
                         Container(
                           child: SizedBox(
-                            child: SizedBox(
-                              child: Image.asset("lib/imagens/s44.png"),
-                              height: 42,
-                              width: 42,
-                            ),
-                          ),
+                              child: Icon(
+                            //Icons.group,
+                            LineIcons.group,
+                            color: Colors.black,
+                            size: 48,
+                          )),
                         ),
                         Text(
-                          "Adicione uma Fámilia",
+                          "Sobre Nós",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.black,
@@ -302,7 +304,7 @@ class InsideLoginPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => NewFamilyPage(),
+                          builder: (context) => AboutUsPage(),
                         ),
                       );
                     },

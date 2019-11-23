@@ -24,6 +24,7 @@ class BePartnerPage extends StatefulWidget {
 }
 
 class _BePartnerPageState extends State<BePartnerPage> {
+  String _parceiro, _cnpj, _somos;
   User selectedEscolha;
   List<User> escolha = <User>[const User('ONG'), const User('Pessoa Jurídica')];
 
@@ -41,7 +42,7 @@ class _BePartnerPageState extends State<BePartnerPage> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("lib/imagens/7.png"),
+            image: AssetImage("lib/imagens/6.png"),
             fit: BoxFit.cover,
           ),
           /*gradient: LinearGradient(
@@ -103,7 +104,85 @@ class _BePartnerPageState extends State<BePartnerPage> {
               ),
             ),
             SizedBox(
-              height: 15,
+              height: 35,
+            ),
+            TextFormField(
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                labelText: "Nome da ONG ou Empresa:",
+                labelStyle: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 15,
+                ),
+              ),
+              style: TextStyle(
+                fontSize: 20,
+              ),
+              onSaved: (input) => _parceiro = input,
+            ),
+            SizedBox(
+              height: 35,
+            ),
+            TextFormField(
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                labelText: "CNPJ:",
+                labelStyle: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 15,
+                ),
+              ),
+              style: TextStyle(
+                fontSize: 20,
+              ),
+              onSaved: (input) => _cnpj = input,
+            ),
+            SizedBox(
+              height: 35,
+            ),
+            TextFormField(
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                labelText: "Descreva Sua ONG/Empresa:",
+                labelStyle: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 15,
+                ),
+              ),
+              style: TextStyle(
+                fontSize: 20,
+              ),
+              onSaved: (input) => _somos = input,
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            Container(
+              height: 55,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                color: Colors.green.withOpacity(0.8),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(9),
+                ),
+              ),
+              child: SizedBox.expand(
+                child: FlatButton(
+                  child: Text(
+                    "Enviar",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 22,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  onPressed: () => {},
+                ),
+              ),
             ),
           ],
         ),

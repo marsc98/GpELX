@@ -19,28 +19,82 @@ class OngsPage extends StatelessWidget {
           right: 40,
         ),
         decoration: BoxDecoration(
-          color: Color(0xFFF3F9DD),
+          //color: Color(0xFFF3F9DD),
+          image: DecorationImage(
+            image: AssetImage("lib/imagens/4.png"),
+            fit: BoxFit.cover,
+          ),
         ),
         child: ListView(
           children: <Widget>[
-            // ListTile(
-            //   leading: Icon(
-            //     Icons.accessibility_new,
-            //     color: Colors.black,
-            //     size: 40,
-            //   ),
-            //   title: Text(
-            //     "Escola Estadual de Ensino Fundamental",
-            //     style: TextStyle(
-            //       fontSize: 20,
-            //       fontWeight: FontWeight.w500,
-            //     ),
-            //   ),
-            // ),
-            SizedBox(
-              child: Container(
-                height: 30,
-                decoration: BoxDecoration(),
+            ListTile(
+              leading: Icon(
+                Icons.accessibility_new,
+                color: Colors.black,
+                size: 40,
+              ),
+              title: Text(
+                "Escola Estadual de Ensino Fundamental",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.accessibility_new,
+                color: Colors.black,
+                size: 40,
+              ),
+              title: Text(
+                "Escola Estadual de Ensino Fundamental",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.accessibility_new,
+                color: Colors.black,
+                size: 40,
+              ),
+              title: Text(
+                "Escola Estadual de Ensino Fundamental",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.accessibility_new,
+                color: Colors.black,
+                size: 40,
+              ),
+              title: Text(
+                "Escola Estadual de Ensino Fundamental",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.accessibility_new,
+                color: Colors.black,
+                size: 40,
+              ),
+              title: Text(
+                "Escola Estadual de Ensino Fundamental",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
           ],
